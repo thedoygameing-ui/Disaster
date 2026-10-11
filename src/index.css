@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+    background-color: #0c1322;
+    color: #dce2f7;
+    overscroll-behavior: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Tactical Color variables & utilities */
+:root {
+  --surface: #0c1322;
+  --surface-low: #141b2b;
+  --surface-container: #191f2f;
+  --surface-high: #232a3a;
+  --surface-highest: #2e3545;
+  --primary: #adc6ff;
+  --primary-container: #4d8eff;
+  --secondary: #ffb3ad;
+  --secondary-container: #a40217;
+  --tertiary: #ffb95f;
+  --tertiary-container: #ca8100;
+  --error: #ffb4ab;
+  --outline: #8c909f;
+}
+
+/* Hide scrollbar for tabs and horizontal carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes radarSweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.radar-sweep-line {
+  transform-origin: 50% 50%;
+  animation: radarSweep 6s linear infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AEGIS DISASTER MONITOR",
+  "description": "ระบบติดตามภัยพิบัติธรรมชาติและศูนย์เตือนภัยฉุกเฉินเรียลไทม์ พร้อมคู่มือรับมือ คาดการณ์ความเสี่ยง และสัญญาณ SOS ขอความช่วยเหลือ",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
